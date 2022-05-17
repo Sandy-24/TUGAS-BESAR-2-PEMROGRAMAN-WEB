@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> website </title>
+        <link rel="stylesheet" type="text/css" href="Mines.css">
+    </head>
+    <body>
+        <script>
+            let d = new Date();
+            document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+        </script>
+        <div class="main">
+            <div class="img"></div>
+            <h1>Sandy Mahesa Putra</h1>
+            <div class="text" id="nama"></div>
+            <p>Hi, My Name Sandy Mahesa Putra im a active student in mercubuana university. im a newcomer in coding, web development etc</p>
+            <ul>
+                <li><a href="#"><img src="facebook-logo-3.png" width="25px" height="25px"></a></li>
+                <li><a href="#"><img src="Beautiful-design-Instagram-logo-transparent-PNG.png" width="25px" height="25px"></a></li>
+                <li><a href="#"><img src="youtube-logo.png" width="25px" height="25px"></a></li>
+                <li><a href="#"><img src="R.png" width="25px" height="25px"></a></li>
+            </ul>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            var nama = prompt("Welcome to Sandy website, please enter your code.", "");
+            document.write("<p>Hello "+ nama +", Selamat Datang</p>");
+
+        function User(firstName, middleName, lastName) {
+          this.firstName = firstName;
+          this.middleName = middleName;
+          this.lastName = lastName;
+
+          this.fullName = function() {
+             return `Website by "${this.firstName} ${this.middleName} ${this.lastName}".`
+          }
+              this.showName = function() {
+             alert(this.fullName());
+             }
+            }
+            var person = new User("Sandy", "Mahesa", "Putra");
+            person.showName();
+
+            function showMessage(from, text) {
+                  if (text === undefined) {
+                   text = 'no text given';
+                 }
+
+                  alert( from + ": " + text );
+                }
+        </script>
+    </body>
+</html>
